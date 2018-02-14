@@ -1,6 +1,7 @@
 # H1B Web Application Deployment
 This repository shows the detailed instuction on how to deploy a Bokeh Server on Amazon Web Services EC2.
-The website is: **[18.219.1.116:5006](18.219.1.116:5006)**. Due to budget constraint, the server may be not always available.
+
+The website is: [18.219.1.116:5006](18.219.1.116:5006). Due to budget constraint, the server may be not always available.
 
 Objective:
 
