@@ -51,7 +51,7 @@ The application code also sets up any callbacks that should be run whenever prop
 
 
 
-====================================================== other commands
+====================================================== other useful commands
 sudo fuser -k 5006/tcp  		# stop a server port 5006
 pip install --user bokeh --upgrade   	# <--user> makes pip install packages in home directory instead, which doesn't require any special privileges.
 
