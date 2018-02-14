@@ -19,20 +19,27 @@ The main python file [H1B_bokeh_server.py]( https://github.com/sxl5507/H1B-Web-A
 
 ## Setup AWS EC2 Instance
 First, you need to create a new AWS account to get 12 months free-tier service. 
+
 Under Services tab, find Compute/EC2, then launch instance.
+
 Select ‘Ubuntu Server 16.04 LTS (HVM), EBS General Purpose (SSD) Volume Type’
+
 Leave every configuration as default, but under ‘Configure Security Group’ change ‘Type’ to ‘All TCP’ and ‘Source’ to ‘Anywhere’.
+
 Click ‘launch’ and select the drop down and create a new key pair, download it. You need it to connect to VM later.
 
 
 ## Create an Elastic IP
 For web application to be permanently accessible from the same IP, we will need to allocate a static address. 
+
 Under EC2 Dashboard/Network & Security/Elastic IPs, click ‘Allocate new address’
+
 Under Action/Associate address, choose your EC2 instance and private IP
 
 
 ## Connect to Ubuntu VM
 Download and install PuTTY software on your local computer.
+
 Use PuTTYgen to convert your PEM key file to RSA format. Later, you only need RSA key
 
 
