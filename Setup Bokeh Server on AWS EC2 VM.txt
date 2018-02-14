@@ -1,4 +1,4 @@
-Connect to AWS EC2 VM and setup Python/Bokeh environment
+Connect to Ubuntu VM hosted at AWS EC2 and setup Python/Bokeh environment
 
 ====================================================== Prepare Connection
 install PuTTY on Windows to connect EC2 (Ubuntu Server) on AWS
@@ -50,6 +50,7 @@ May need 2GB RAM (set instance type to t2.small, cheap but not free)!
 The application code is executed in the Bokeh server every time a new connection is made, to create the new Bokeh Document that will be synced to the browser. 
 The application code also sets up any callbacks that should be run whenever properties such as widget values are changes.
 
+* Your website address will be <Elastic IP:5006>, eg. 18.219.1.116:5006
 
 
 ====================================================== other useful commands
