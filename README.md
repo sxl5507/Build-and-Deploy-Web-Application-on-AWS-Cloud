@@ -44,6 +44,6 @@ Use PuTTYgen to convert your PEM key file to RSA format. Later, you only need RS
 
 
 ## Setup Bokeh Server on Ubuntu VM
-Instruction: [Setup Bokeh Server on AWS EC2 VM.txt]( https://github.com/sxl5507/H1B-Web-Application-Deployment.git)
+Instruction: [Setup Bokeh Server on Ubuntu VM.txt](https://github.com/sxl5507/H1B-Web-Application-Deployment.git)
 
 
