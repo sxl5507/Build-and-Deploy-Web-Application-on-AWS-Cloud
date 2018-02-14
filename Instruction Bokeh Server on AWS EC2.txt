@@ -42,7 +42,7 @@ unzip filename
 source py3.6/bin/activate
 cd /home/ubuntu/py3.6/h1b
 
-# sometimes the background application would die, using </dev/null >/dev/null 2>&1; reference: https://www.xaprb.com/blog/2006/06/06/what-does-devnull-21-mean/
+# sometimes the background application would die, using </dev/null >/dev/null 2>&1; command explain: https://www.xaprb.com/blog/2006/06/06/what-does-devnull-21-mean/
 # use <nohup> and <&> to make sure server is running even after closing (ctrl + D) console; Session Expiration Options: https://bokeh.pydata.org/en/latest/docs/reference/command/subcommands/serve.html
 nohup bokeh serve H1B_bokeh_server.py --check-unused-sessions 100 --unused-session-lifetime 100 --allow-websocket-origin 18.219.1.116:5006 </dev/null >/dev/null 2>&1 &
 
