@@ -1,6 +1,13 @@
 # H1B Web Application Deployment
 This repository shows the detailed instuction on how to deploy a Bokeh Server on Amazon Web Services EC2.
 
+Objective:
+
+    1. visualize top n sponsored job titles
+    2. visualize top n H-1B sponsors
+    3. search H-1B official data based on employer name, job title, or any combination, and similar search results are returned
+    4. distribute this web application through internet (by using AWS)
+
 
 ## Original Data Source
 H-1B data (FY15 to FY17) is obtained directly from [United States Department of Labor](https://www.foreignlaborcert.doleta.gov/performancedata.cfm). Then 3 years of data is combined to a single file and some unrelated columns are removed, more details are documented at [data source.txt](https://github.com/sxl5507/H1B-Web-Application.git).
