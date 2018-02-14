@@ -11,7 +11,7 @@ in PuTTY:
 
 
 
-====================================================== Setup VM, py3.6 is folder name
+====================================================== Setup VM, py3.6 is folder name of environment
 sudo apt-get update
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
