@@ -6,6 +6,8 @@ in PuTTY:
 	Data/Auto-login username - ubuntu		
 	AAH/Auth/Browse key file
 
+* you can find host and username at EC2 Dashboard/Instances, on right pannel click 'Connect'
+
 
 
 ====================================================== Setup VM, py3.6 is folder name
