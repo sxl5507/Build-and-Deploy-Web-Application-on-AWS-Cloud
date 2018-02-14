@@ -1,7 +1,11 @@
 # H1B Web Application Deployment
 This repository shows the detailed instuction on how to deploy a Bokeh Server on Amazon Web Services EC2.
+
 You can view the result at website: **18.219.1.116:5006**. Due to budget constraint, the server may be offline.
+
 Website screenshots are stored in [website screenshot](https://github.com/sxl5507/H1B-Web-Application-Deployment.git) folder.
+
+
 
 ## Objective:
 Application Function:
