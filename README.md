@@ -1,12 +1,19 @@
 # H1B Web Application Deployment
 This repository shows the detailed instuction on how to deploy a Bokeh Server on Amazon Web Services EC2.
+The website is: **[18.219.1.116:5006](18.219.1.116:5006)**. Due to budget constraint, the server may be not always available.
 
 Objective:
 
+    Application Function:
     1. visualize top n sponsored job titles
     2. visualize top n H-1B sponsors
-    3. search H-1B official data based on employer name, job title, or any combination, and similar search results are returned
-    4. distribute this web application through internet (by using AWS)
+    3. search H-1B official data based on employer name or job title or any combination, and similar names and titles are returned
+
+    Algorithm Design:
+    this cool interactive web application is able to be distributed through internet (by using AWS)
+    1. with efficient data loading process to minimize RAM usage
+    2. with robust search engine to prohibit meaningless search (eg. non alphanumeric characters are skipped, and search with space is not allowed)
+    3. with instructive real time message/error
 
 
 ## Original Data Source
