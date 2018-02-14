@@ -10,7 +10,7 @@ Application Function:
 2. visualize top n H-1B sponsors
 3. search H-1B official data based on employer name or job title or any combination, and similar names and titles are returned
 
-
+<br />
 Algorithm Design:
 
 this cool interactive web application is able to be distributed through internet (by using AWS)
