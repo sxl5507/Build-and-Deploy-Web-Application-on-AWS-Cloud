@@ -38,7 +38,7 @@ unzip filename
 
 
 
-====================================================== run bokeh server on VM, link: http://alanpryorjr.com/2017-09-24-stockstreamer/; May need 2GB RAM
+====================================================== run bokeh server on VM, reference: http://alanpryorjr.com/2017-09-24-stockstreamer/; 
 source py3.6/bin/activate
 cd /home/ubuntu/py3.6/h1b
 
@@ -46,7 +46,7 @@ cd /home/ubuntu/py3.6/h1b
 # use <nohup> and <&> to make sure server is running even after closing (ctrl + D) console; Session Expiration Options: https://bokeh.pydata.org/en/latest/docs/reference/command/subcommands/serve.html
 nohup bokeh serve H1B_bokeh_server.py --check-unused-sessions 100 --unused-session-lifetime 100 --allow-websocket-origin 18.219.1.116:5006 </dev/null >/dev/null 2>&1 &
 
-May need 2GB RAM!
+May need 2GB RAM (set instance type to t2.small, cheap but not free)!
 The application code is executed in the Bokeh server every time a new connection is made, to create the new Bokeh Document that will be synced to the browser. 
 The application code also sets up any callbacks that should be run whenever properties such as widget values are changes.
 
