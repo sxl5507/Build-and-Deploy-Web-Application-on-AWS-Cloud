@@ -1,4 +1,4 @@
-Connect to AWS EC2 VM and setup Python/Bokeh environemt
+Connect to AWS EC2 VM and setup Python/Bokeh environment
 
 ====================================================== Prepare Connection
 install PuTTY on Windows to connect EC2 (Ubuntu Server) on AWS
