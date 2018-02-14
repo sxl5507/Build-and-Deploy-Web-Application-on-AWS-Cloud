@@ -1,0 +1,58 @@
+
+====================================================== Prepare Connection
+install PuTTY on Windows to connect EC2 (Ubuntu Server) on AWS
+in PuTTY: 
+	Session/Host Name - ec2-18-219-1-116.us-east-2.compute.amazonaws.com (session can be saved for easy login next time)
+	Data/Auto-login username - ubuntu		
+	AAH/Auth/Browse key file
+
+
+
+====================================================== Setup VM, py3.6 is folder name
+sudo apt-get update
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt-get install python3.6
+sudo apt install python3-pip
+pip3 install virtualenv
+
+virtualenv -p python3.6 py3.6
+source py3.6/bin/activate
+pip3 install bokeh
+pip3 install pandas
+
+
+
+====================================================== Upload zip files to VM, then unzip
+install FileZilla to upload files
+Enter Host and Username (similar to PuTTY), then connect to VM
+Creat a folder in py3.6
+Drag local files to FileZilla to upload
+
+sudo apt-get install unzip
+cd /home/ubuntu/py3.6/h1b
+unzip filename
+
+
+
+====================================================== run bokeh server on VM, link: http://alanpryorjr.com/2017-09-24-stockstreamer/; May need 2GB RAM
+source py3.6/bin/activate
+cd /home/ubuntu/py3.6/h1b
+
+# sometimes the background application would die, using </dev/null >/dev/null 2>&1; link: https://www.xaprb.com/blog/2006/06/06/what-does-devnull-21-mean/
+# use <nohup> and <&> to make sure server is running even after closing (ctrl + D) console; Session Expiration Options: https://bokeh.pydata.org/en/latest/docs/reference/command/subcommands/serve.html
+nohup bokeh serve H1B_bokeh_server.py --check-unused-sessions 100 --unused-session-lifetime 100 --allow-websocket-origin 18.219.1.116:5006 </dev/null >/dev/null 2>&1 &
+
+May need 2GB RAM!
+The application code is executed in the Bokeh server every time a new connection is made, to create the new Bokeh Document that will be synced to the browser. 
+The application code also sets up any callbacks that should be run whenever properties such as widget values are changes.
+
+
+
+====================================================== other commands
+sudo fuser -k 5006/tcp  		# stop a server port 5006
+pip install --user bokeh --upgrade   	# <--user> makes pip install packages in home directory instead, which doesn't require any special privileges.
+
+
+
+

@@ -1,0 +1,16 @@
+H-1B_Disclosure_Data_FY15to17.csv (prepared by H1B.py) is combined from 
+['H-1B_Disclosure_Data_FY15_Q4.xlsx', 'H-1B_Disclosure_Data_FY16.xlsx', 'H-1B_Disclosure_Data_FY17.xlsx']
+found at https://www.foreignlaborcert.doleta.gov/performancedata.cfm
+
+
+AND
+76 duplicate/abnormal data are dropped based on common values in column ['CASE_NUMBER', 'CASE_STATUS'].
+However, other meaningful duplicates are still existing.
+
+For example, a unique CASE_NUMBER may have 2 records that contains different CASE_STATUS (certified and certified-withdraw).
+In this scenario, both records (same CASE_NUMBER) are kept.
+
+
+
+----------------------------------------------------------------
+top 100 employer.csv and top 100 job title.csv (include all case status) are derived from H-1B_Disclosure_Data_FY15to17.csv 

@@ -1,0 +1,6 @@
+python==3.6.4
+
+bokeh==0.12.13
+numpy==1.14.0
+pandas==0.22.0
+
