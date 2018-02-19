@@ -5,7 +5,7 @@ install PuTTY on Windows to connect EC2 (Ubuntu Server) on AWS
 in PuTTY: 
 	Session/Host Name - ec2-18-219-1-116.us-east-2.compute.amazonaws.com (session can be saved for easy login next time)
 	Data/Auto-login username - ubuntu		
-	AAH/Auth/Browse key file
+	SSH/Auth/Browse key file
 
 * you can find host and username at EC2 Dashboard/Instances, on right pannel click 'Connect'
 
